@@ -1,12 +1,42 @@
-body {
+@charset "UTF-8";
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  padding: 0;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  text-align: left;
+  list-style-type: none;
+  border-collapse: collapse;
   background-color: #f0f0f0;
 }
 
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+html {
+
+}
+
+body {
+  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .container {
   width: 200px; /* 任意の幅 */
   height: 400px; /* 任意の高さ */
@@ -15,9 +45,7 @@ body {
 
 .black, .white {
   height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative; /* 親要素としての基準 */
   font-size: 18px;
   font-family: Arial, sans-serif;
 }
@@ -25,10 +53,13 @@ body {
 .black {
   background-color: black;
   color: white;
+  text-align: left;
+  padding: 5px; /* 左上の余白 */
 }
 
 .white {
   background-color: white;
   color: black;
+  text-align: left;
+  padding: 5px; /* 左上の余白 */
 }
-
